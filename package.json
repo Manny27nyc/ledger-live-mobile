@@ -60,7 +60,7 @@
     "@ledgerhq/devices": "6.0.2",
     "@ledgerhq/errors": "6.0.2",
     "@ledgerhq/hw-app-btc": "6.0.2",
-    "@ledgerhq/hw-app-eth": "6.0.2",
+    "@ledgerhq/hw-app-eth": "6.13.0",
     "@ledgerhq/hw-app-xrp": "6.0.2",
     "@ledgerhq/hw-transport": "6.0.2",
     "@ledgerhq/hw-transport-http": "6.0.2",
