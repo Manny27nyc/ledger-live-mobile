@@ -99,7 +99,7 @@
     "domain-browser": "^3.5.0",
     "eip55": "^1.0.3",
     "events": "^3.2.0",
-    "fuse.js": "^3.4.6",
+    "fuse.js": "^6.4.6",
     "hoist-non-react-statics": "3.3.2",
     "https-browserify": "~1.0.0",
     "i18next": "19.9.2",
