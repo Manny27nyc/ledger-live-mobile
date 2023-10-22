@@ -47,7 +47,9 @@
     "sync-locales": "./scripts/sync-locales.sh",
     "pod": "cd ios && bundle exec pod install --repo-update",
     "hack-for-ios-simulator": "cd node_modules/@ledgerhq/react-native-ledger-core/ios/Frameworks && mv universal real_universal && cp -R x86 universal",
-    "test-deep-links": "ws --spa ./deep-links-test-page.html"
+    "test-deep-links": "ws --spa ./deep-links-test-page.html",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "preset": "react-native",
@@ -64,9 +66,9 @@
     "@ledgerhq/hw-app-xrp": "6.0.2",
     "@ledgerhq/hw-transport": "6.0.2",
     "@ledgerhq/hw-transport-http": "6.0.2",
-    "@ledgerhq/live-common": "20.1.2",
+    "@ledgerhq/live-common": "21.10.0",
     "@ledgerhq/logs": "6.0.2",
-    "@ledgerhq/react-native-hid": "6.0.2",
+    "@ledgerhq/react-native-hid": "6.9.0",
     "@ledgerhq/react-native-hw-transport-ble": "6.0.2",
     "@ledgerhq/react-native-ledger-core": "4.19.1",
     "@ledgerhq/react-native-passcode-auth": "^2.1.0",
@@ -83,8 +85,8 @@
     "@segment/analytics-react-native": "^1.3.2",
     "@tradle/react-native-http": "^2.0.0",
     "assert": "^2.0.0",
-    "async": "^3.2.0",
-    "axios": "^0.21.1",
+    "async": "^3.2.2",
+    "axios": "^0.21.3",
     "bignumber.js": "^9.0.1",
     "browserify-zlib": "~0.2.0",
     "buffer": "6.0.3",
@@ -92,7 +94,7 @@
     "console-browserify": "^1.2.0",
     "constants-browserify": "^1.0.0",
     "d3-array": "^2.4.0",
-    "d3-scale": "^3.2.1",
+    "d3-scale": "^4.0.0",
     "d3-shape": "^1.3.7",
     "date-fns": "^2.16.1",
     "dns.js": "^1.0.1",
@@ -119,7 +121,7 @@
     "re-reselect": "^3.4.0",
     "react": "17.0.2",
     "react-i18next": "11.8.13",
-    "react-native": "0.63.4",
+    "react-native": "0.68.0",
     "react-native-android-location-services-dialog-box": "^2.8.2",
     "react-native-animatable": "^1.3.3",
     "react-native-ble-plx": "2.0.1",
@@ -137,9 +139,9 @@
     "react-native-navigation-bar-color": "^2.0.1",
     "react-native-os": "^1.2.6",
     "react-native-progress": "^4.0.3",
-    "react-native-qrcode-svg": "6.0.3",
+    "react-native-qrcode-svg": "6.0.6",
     "react-native-randombytes": "^3.6.0",
-    "react-native-reanimated": "^1.10.1",
+    "react-native-reanimated": "^2.10.0",
     "react-native-redash": "^15.11.1",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-safe-area-view": "^1.1.1",
@@ -149,7 +151,7 @@
     "react-native-simple-store": "^2.0.2",
     "react-native-slider": "^0.11.0",
     "react-native-splash-screen": "3.2.0",
-    "react-native-svg": "^12.0.3",
+    "react-native-svg": "^12.3.0",
     "react-native-swiper": "^1.6.0",
     "react-native-tab-view": "^2.15.2",
     "react-native-tcp": "^4.0.0",
@@ -173,7 +175,8 @@
     "tty-browserify": "0.0.1",
     "url": "^0.11.0",
     "uuid": "^7.0.2",
-    "vm-browserify": "1.1.2"
+    "vm-browserify": "1.1.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@actions/core": "^1.2.6",
@@ -256,5 +259,6 @@
     "tty": "tty-browserify",
     "vm": "vm-browserify",
     "tls": false
-  }
+  },
+  "snyk": true
 }
